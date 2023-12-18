@@ -1,0 +1,16 @@
+name: NotifyWebhookOnPRToDevelop
+
+on:
+  pull_request:
+    branches:
+      - develop
+
+jobs:
+  sendWebhookNotification:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call Webhook
+        uses: distributhor/workflow-webhook@v3
+        with:
+          webhook_url: ${{ secrets.WEBHOOK_URL }}
+          webhook_secret: ${{ secrets.WEBHOOK_SECRET }}

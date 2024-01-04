@@ -38,8 +38,9 @@ function InputContainer<T extends FieldValues>({
       />
       {initialType === 'password' && (
         <button
-          className='absolute right-0 top-58 h-24 w-24 -translate-x-1/2 -translate-y-1/2'
           onClick={togglePasswordShow}
+          type='button'
+          className='absolute right-0 top-58 h-24 w-24 -translate-x-1/2 -translate-y-1/2'
         >
           {type === 'password' ? <IconEyeOff /> : <IconEyeOn />}
         </button>

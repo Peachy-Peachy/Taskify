@@ -70,7 +70,7 @@ function SideMenu({ dashboardId }: Props) {
         <Logo />
       </div>
       <DashboardsHeader />
-      <ul className='flex h-full w-full flex-col gap-5 overflow-y-auto overflow-x-hidden'>
+      <ul className='custom-scrollbar flex h-full w-full flex-col gap-5 overflow-y-auto overflow-x-hidden'>
         {dashboards?.pages.map((dashboardPage) =>
           dashboardPage.dashboards.map((dashboard) => (
             <li key={dashboard.id}>

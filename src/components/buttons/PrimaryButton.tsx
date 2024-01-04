@@ -17,7 +17,7 @@ function PrimaryButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`button bg-primary text-white disabled:bg-gray-4 ${BUTTON_SIZE[size]}`}
+      className={`button bg-primary text-WHITE disabled:bg-gray-4 ${BUTTON_SIZE[size]}`}
       {...rest}
     >
       {children}

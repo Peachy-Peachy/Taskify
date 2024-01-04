@@ -70,9 +70,9 @@ function Form() {
       <div className='flex flex-col gap-24 pb-16 tablet:flex-row tablet:gap-16 tablet:pb-24'>
         <ImageDrop type='profile' initialImageUrl={loginInfo.profileImageUrl} />
         <div className='flex w-full flex-col gap-10'>
-          <label htmlFor='password'>이메일</label>
+          <label htmlFor='email'>이메일</label>
           <input
-            id='password'
+            id='email'
             className='input mb-10'
             placeholder={loginInfo.email}
             disabled
@@ -82,10 +82,10 @@ function Form() {
             name='nickname'
             placeholder={loginInfo.nickname}
             rules={{
-              required: ERROR_MESSAGES.email.emailField,
+              required: ERROR_MESSAGES.nickname.nicknameField,
               pattern: {
                 value: REG_EXP.CHECK_NICKNAME,
-                message: ERROR_MESSAGES.email.emailPattern,
+                message: ERROR_MESSAGES.nickname.nicknamePattern,
               },
             }}
           >

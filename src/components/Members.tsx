@@ -103,7 +103,7 @@ function DefaultMember({ nickname, index }: DefaultMember) {
 
   return (
     <div
-      className={`border-solid-white subheading-normal absolute h-38 w-38 items-center justify-center overflow-hidden rounded-full text-white ${color} ${INDEX_POSITION[index]}`}
+      className={`border-solid-white subheading-normal absolute h-38 w-38 items-center justify-center overflow-hidden rounded-full text-WHITE ${color} ${INDEX_POSITION[index]}`}
     >
       {initial}
     </div>

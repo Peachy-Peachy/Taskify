@@ -28,7 +28,7 @@ function Layout({ children }: Props) {
           <SideMenu dashboardId={dashboardId} />
           <div className='w-full overflow-hidden'>
             <DashboardHeader dashboardId={dashboardId} />
-            <div className='h-[calc(100%-60px)] w-full overflow-auto bg-gray-1 pc:h-[calc(100%-70px)]'>
+            <div className='custom-scrollbar h-[calc(100%-60px)] w-full overflow-auto bg-gray-1 pc:h-[calc(100%-70px)]'>
               {children}
             </div>
           </div>

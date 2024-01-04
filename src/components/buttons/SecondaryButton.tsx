@@ -17,7 +17,7 @@ function SecondaryButton({
     <button
       onClick={onClick}
       disabled={disabled}
-      className={`button bg-white text-primary ${BUTTON_SIZE[size]} border-solid-gray disabled:bg-gray-4 disabled:text-white`}
+      className={`button bg-WHITE text-primary ${BUTTON_SIZE[size]} border-solid-gray disabled:bg-gray-4 disabled:text-white`}
       {...rest}
     >
       {children}

@@ -2,11 +2,8 @@ import { IconFacebook } from '@/public/svgs';
 
 export default function Facebook() {
   const shareOnFacebook = () => {
-    // 페이스북 공유 링크 URL 설정
     const shareUrl =
       'https://www.facebook.com/sharer/sharer.php?u=https://your-website.com';
-
-    // 새 창에서 페이스북 공유 페이지 열기
     window.open(shareUrl, '_blank');
   };
 

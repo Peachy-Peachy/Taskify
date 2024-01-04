@@ -2,10 +2,7 @@ import { IconInstagram } from '@/public/svgs';
 
 export default function Instagram() {
   const shareOnInstagram = () => {
-    // 인스타그램 앱을 열기 위한 링크
     const instagramUrl = 'instagram://app';
-
-    // 인스타그램 앱이 설치되어 있는지 확인 후, 설치되어 있다면 해당 URL을 공유
     window.location.href = instagramUrl;
   };
 
